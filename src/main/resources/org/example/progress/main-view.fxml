@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.progress.Controllers.Controller"
+      prefHeight="400.0" prefWidth="600.0"
+      spacing="15" alignment="TOP_CENTER"
+      stylesheets="@style.css">
+
+    <Label text="Progress" styleClass="title-label"/>
+
+    <HBox spacing="10" alignment="CENTER" style="-fx-padding: 0 20 0 20;">
+        <TextField fx:id="titleTaskField" promptText="Введите название задачи" styleClass="text-field" HBox.hgrow="ALWAYS"/>
+        <Button text="Добавить" onAction="#addTask" styleClass="add-button"/>
+    </HBox>
+
+    <ListView fx:id="tasksListView" styleClass="list-view" VBox.vgrow="ALWAYS" />
+
+</VBox>

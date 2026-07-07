@@ -1,0 +1,130 @@
+/* Корневой контейнер */
+.root {
+    -fx-background-color: #f0f2f5;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* Заголовок */
+.title-label {
+    -fx-text-fill: #2d3436;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-padding: 15 0 20 0;
+}
+
+/* Поле ввода */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2d3436;
+    -fx-prompt-text-fill: #b2bec3;
+    -fx-background-radius: 10;
+    -fx-padding: 12 15;
+    -fx-border-color: #dfe6e9;
+    -fx-border-radius: 10;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused {
+    -fx-border-color: #0984e3;
+}
+
+/* Кнопка "Добавить" */
+.add-button {
+    -fx-background-color: #0984e3;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 10 25;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.add-button:hover {
+    -fx-background-color: #0873c7;
+}
+
+/* Список задач */
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dfe6e9;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-padding: 0;
+}
+
+.list-view .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2d3436;
+    -fx-border-color: #f0f2f5;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 10 15;
+    -fx-pref-height: 50px;
+    -fx-min-height: 50px;
+    -fx-max-height: 50px;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #f8f9fa;
+}
+
+/* Название задачи */
+.list-cell .label {
+    -fx-font-size: 16px;
+}
+
+/* Check box */
+.check-box .box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #b2bec3;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #0984e3;
+    -fx-border-color: #0984e3;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #ffffff;
+}
+
+/* Кнопка "Удалить" */
+.delete-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #b2bec3;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 0 8;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.delete-button:hover {
+    -fx-background-color: #ff7675;
+    -fx-text-fill: #ffffff;
+}
+
+.delete-button:pressed {
+    -fx-background-color: #d63031;
+    -fx-text-fill: #ffffff;
+}
+
+/* Скролл */
+.scroll-bar {
+    -fx-background-color: #f0f2f5;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #dfe6e9;
+    -fx-background-radius: 10;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #b2bec3;
+}
